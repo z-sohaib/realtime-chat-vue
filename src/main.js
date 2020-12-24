@@ -3,7 +3,7 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 
-import firebase from 'firebase';
+import firebase from "firebase";
 
 import "firebase/firestore";
 
@@ -18,7 +18,7 @@ var firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 
-var db = admin.firestore();
+var db = firebase.firestore();
 
 window.db = db;
 
